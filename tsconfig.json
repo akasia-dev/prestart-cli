@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "importHelpers": false,
+    "sourceMap": false,
+    "declaration": true,
+    "inlineSourceMap": false,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "ES3",
+    "types": [
+      "node",
+      "jest"
+    ],
+    "lib": [
+      "es5",
+      "es6",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true
+  },
+  "typeRoots": [
+    "./node_modules/@types"
+  ],
+  "exclude": [
+    "./test",
+    "./dist"
+  ]
+}
