@@ -5,7 +5,7 @@ var fs_1 = require("fs");
 var child_process_1 = require("child_process");
 var path_1 = require("path");
 if (!(0, fs_1.existsSync)((0, path_1.resolve)(process.cwd(), 'node_modules'))) {
-    var child = (0, child_process_1.spawn)('npm', ['install', '--color=always'], {
+    var child = (0, child_process_1.spawn)('npm', ['ci', '--color=always'], {
         stdio: 'pipe',
         cwd: process.cwd()
     });

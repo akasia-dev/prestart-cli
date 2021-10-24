@@ -3,7 +3,7 @@ import { spawn } from 'child_process'
 import { resolve } from 'path'
 
 if (!existsSync(resolve(process.cwd(), 'node_modules'))) {
-  const child = spawn('npm', ['install', '--color=always'], {
+  const child = spawn('npm', ['ci', '--color=always'], {
     stdio: 'pipe',
     cwd: process.cwd()
   })
